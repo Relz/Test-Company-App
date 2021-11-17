@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String text,
   ) {
     window.document.cookie =
-        '${id}=true; path=/; expires=Thu, 01 Jan 2022 00:00:01 GMT;';
+        '${id}=true; domain=.test-company.com; path=/; expires=Thu, 01 Jan 2022 00:00:01 GMT;';
 
     Navigator.push(
       context,
@@ -188,7 +188,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _logOut() {
     setState(() {
       window.document.cookie =
-          'session-id=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+          'session-id=; domain=.test-company.com; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     });
   }
 }

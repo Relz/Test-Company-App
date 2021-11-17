@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
 
   void _logIn() {
     window.document.cookie =
-        'session-id=${Uuid().v4()}; path=/; expires=Thu, 01 Jan 2022 00:00:01 GMT;';
+        'session-id=${Uuid().v4()}; domain=.test-company.com; path=/; expires=Thu, 01 Jan 2022 00:00:01 GMT;';
 
     Navigator.pop(context);
   }
