@@ -34,7 +34,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    print(window.document.cookie);
     bool authorized = window.document.cookie?.contains('session-id') ?? false;
 
     return Scaffold(
